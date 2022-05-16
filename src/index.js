@@ -4,6 +4,8 @@ const { engine } = require("express-handlebars");
 const methodOverride = require("method-override");
 const session = require("express-session");
 
+require("./database");
+
 // Initializations
 const app = express();
 
