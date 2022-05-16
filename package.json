@@ -4,7 +4,7 @@
   "description": "En este ejemplo crearemos una aplicacion de Notas, que sera un CRUD de nodejs, más un Login y Registro utilizando Mongodb, ademas de proteger nuestras rutas del servidor y estilizar nuestra aplicación con CSS y Bootstrap4.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,9 @@
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
     "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
   }
 }
