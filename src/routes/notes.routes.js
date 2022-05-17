@@ -1,9 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/notes", (req, res) => {
-  res.render("notes/all-notes");
-});
+const Note = require("../models/Note");
 
 router.get("/notes/add", (req, res) => {
   res.render("notes/new-note");
@@ -26,15 +24,16 @@ router.post("/notes/new-note", async (req, res) => {
     });
   } else {
     const newNote = new Note({ title, description });
-    newNote.user = req.user.id;
     await newNote.save();
-    req.flash("success_msg", "Note Added Successfully");
     res.redirect("/notes");
   }
 });
 
-router.put("/notes/edit-note/:id", (req, res) => {
-  res.render("./notes/edit-note");
+router.get("/notes", (req, res) => {
+  const notes = await Note.find({ user: req.user.id })
+    .sort({ date: "desc" })
+    .lean();
+  res.render("notes/all-notes", { notes });
 });
 
 module.exports = router;
