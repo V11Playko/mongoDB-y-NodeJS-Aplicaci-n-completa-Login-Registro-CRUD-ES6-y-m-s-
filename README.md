@@ -1,2 +1,31 @@
-# mongoDB-y-NodeJS-Aplicaci-n-completa-Login-Registro-CRUD-ES6-y-m-s-
-En este ejemplo crearemos una aplicacion de Notas, que sera un CRUD de nodejs, más un Login y Registro utilizando Mongodb, ademas de proteger nuestras rutas del servidor y estilizar nuestra aplicación con CSS y Bootstrap4.
+# MongoDB-y-NodeJS-Aplicaci-n-completa-Login-Registro-CRUD-ES6..
+
+In this example we will create a Notes application, which will be a nodejs CRUD, plus a Login and Registration using Mongodb, in addition to protecting our server routes and styling our application with CSS and Bootstrap4.
+
+This app can do:
+
+- CRUD Operations: create/read/update/delete Notes
+- Allows a user to do login and save his personal notes
+
+# Screenshot NOTES
+
+<img src="/src/public/img/notes.png" alt="My cool notes"/>
+
+These are the test notes
+
+
+# Screenshot LOGIN
+
+<img src="/src/public/img/login.png" alt="My cool login"/>
+
+This is the app login
+
+
+### Scripts
+
+- npm run dev: Run developer mode
+
+
+### Environment Variables
+
+- MONGODB_URI
