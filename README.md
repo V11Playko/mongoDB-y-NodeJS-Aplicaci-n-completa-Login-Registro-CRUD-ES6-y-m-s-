@@ -9,14 +9,14 @@ This app can do:
 
 # Screenshot NOTES
 
-<img src="/src/public/img/notes.png" alt="My cool notes"/>
+<img src="./docs/notes.png" alt="My cool notes"/>
 
 These are the test notes
 
 
 # Screenshot LOGIN
 
-<img src="/src/public/img/login.png" alt="My cool login"/>
+<img src="./docs/login.png" alt="My cool login"/>
 
 This is the app login
 
